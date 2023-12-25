@@ -891,6 +891,10 @@
      left: 0;
  }
 
+ .check-link {
+     color: #4d5ae5;
+ }
+
  .form-checkbox::aktiv {
      fill: #31d0aa;
  }
