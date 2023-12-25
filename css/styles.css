@@ -854,22 +854,10 @@
 
  }
 
- .form-checkbox {
-     position: absolute;
-     width: 1px;
-     height: 1px;
-     margin: -1px;
-     border: 0;
-     padding: 0;
-     white-space: nowrap;
-     clip-path: inset(100%);
-     clip: rect(0 0 0 0);
-     overflow: hidden;
-
-
-     width: 16px;
-     height: 16px;
-
+ input[type="checkbox"].icon-click:checked {
+     background-color: #404bbf;
+     border: none;
+     fill: #F4F4FD;
  }
 
  .lebel-span {
@@ -885,32 +873,11 @@
  }
 
 
- .icon-click2 {
-     position: absolute;
-     top: 0;
-     left: 0;
- }
-
  .check-link {
      color: #4d5ae5;
  }
 
- .form-checkbox::aktiv {
-     fill: #31d0aa;
- }
 
- .form-checkbox::aktiv .icon-click {
-
-     /* stroke: rgba(0, 0, 0, 1); */
-
-     fill: rgba(64, 75, 191, 1)
- }
-
- .icon-click2 {
-
-     stroke: rgb(43, 81, 121);
-     stroke-width: 0px;
- }
 
  .foot-sub {
      display: flex;
@@ -977,7 +944,30 @@
  }
 
 
+ .icon-click {
+     width: 16px;
+     height: 16px;
+     border: 1px solid rgba(46, 47, 66, 0.4);
+     border-radius: 2px;
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+         border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     fill: transparent;
+     margin-right: 8px;
+     flex-shrink: 0;
+ }
 
+ .checkbox:focus+.form-label>.icon-click {
+     border-color: #4d5ae5;
+ }
 
+ .checkbox:checked+.form-label>.icon-click {
+     background-color: #404bbf;
+     border: none;
+     fill: #f4f4fd;
+ }
 
  /* #endregion */
