@@ -860,22 +860,21 @@
 
  .foot-sub {
      display: flex;
-     flex-direction: row;
-     gap: 24px;
-     align-items: center;
-     margin-left: 80px;
+     flex-direction: column;
+     align-items: flex-start;
+     margin-left: auto;
  }
 
  .subscribe {
      display: flex;
      flex-direction: row;
+     align-items: center;
      gap: 24px;
 
  }
 
  .sub-btn {
      display: flex;
-     margin-top: 40px;
      min-width: 165px;
      height: 40px;
      padding: 8px 24px;
@@ -915,11 +914,11 @@
      border-radius: 4px;
      padding-left: 16px;
      color: rgba(255, 255, 255, 1);
+     gap: 24px;
  }
 
  .icon-sub {
      fill: white;
-     margin-left: 16px;
  }
 
 
