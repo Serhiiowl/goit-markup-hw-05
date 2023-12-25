@@ -789,7 +789,7 @@
  }
 
  .form-input:focus+.icon-backdrop {
-     fill: rgba(64, 75, 191, 1);
+     fill: #4D5AE5;
  }
 
  .form-comment {
@@ -801,7 +801,7 @@
      margin-top: 4px;
      margin-bottom: 16px;
      height: 120px;
-     padding: 8px 8px 8px 16px;
+     padding: 8px 16px;
      outline: transparent;
      font-size: 12px;
      line-height: 1.17;
@@ -855,6 +855,17 @@
  }
 
  .form-checkbox {
+     position: absolute;
+     width: 1px;
+     height: 1px;
+     margin: -1px;
+     border: 0;
+     padding: 0;
+     white-space: nowrap;
+     clip-path: inset(100%);
+     clip: rect(0 0 0 0);
+     overflow: hidden;
+
      border-radius: 2px;
      border: 1px solid rgba(46, 47, 66, 0.4);
      width: 16px;
