@@ -390,7 +390,7 @@
             Name</label>
           <div class="cont-input">
 
-            <input class="form-input" type="text" name="username" id="user-name">
+            <input class="form-input" type="text" name="user-name" id="user-name">
             <svg class="icon-backdrop" width="18" height="24">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
@@ -425,19 +425,19 @@
 
 
         </div>
-        <div class="form-item">
+        <div class="form-item-com">
           <label class="form-label" for="user-comment">Comment</label>
-          <textarea class="form-comment" name="Comment" rows="6" placeholder="Text input" id="user-comment"></textarea>
+          <textarea class="form-comment" name="user-comment" rows="6" placeholder="Text input"
+            id="user-comment"></textarea>
 
 
         </div>
         <div class="form-accept">
-          <input class="form-checkbox" type="checkbox">
-          <p class="form-label">I accept the terms and conditions of the <span><a href="./">Privacy Policy</a></span>
-          </p>
-          <svg class="icon-click" width="16" height="16">
-            <use href="./images/icons.svg#icon-click-back"></use>
-          </svg>
+          <label class="form-label" for="user-privacy">I accept the terms and conditions of the <span><a
+                href="./">Privacy
+                Policy</a></span></label>
+          <input class="form-checkbox" id="user-privacy" type="checkbox" value="true" name="user-privacy">
+
           <svg class="icon-click2" width="16" height="16">
             <use href="./images/icons.svg#icon-click "></use>
           </svg>
